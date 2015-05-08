@@ -1,7 +1,7 @@
 ### R script to plot1 in the assignment##
 
 #### Read the whole dataset from text file into a dataframe####
-hsehld_tbl <- read.table("C:/Users/skumar/Documents/R_working_site/data/household_power_consumption.txt", header=T, sep=';', na.strings="?", 
+hsehld_tbl <- read.table(".Coursera_R/R_working_site/data/household_power_consumption.txt", header=T, sep=';', na.strings="?", 
                             nrows=2075259, check.names=F, stringsAsFactors=F, comment.char="", quote='\"')
 
 ####  subset the dataframe -- data for only two dates####

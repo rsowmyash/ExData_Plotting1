@@ -1,4 +1,6 @@
-#hsehld_tbl2[complete.cases(hsehld_tbl2)]
+#### Read the whole dataset from text file into a dataframe####
+hsehld_tbl <- read.table(".Coursera_R/R_working_site/data/household_power_consumption.txt", header=T, sep=';', na.strings="?", 
+                            nrows=2075259, check.names=F, stringsAsFactors=F, comment.char="", quote='\"')
 ####  subset the dataframe -- data for only two dates####
 hsehld_tbl2$Date <- as.Date(hsehld_tbl2$Date, format="%d/%m/%Y")
 tbl3plot <- subset(hsehld_tbl2, subset=(Date >= "2007-02-01" & Date <= "2007-02-02"))
